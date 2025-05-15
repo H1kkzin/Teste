@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento da Máquina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Monitoramento da Máquina</h1>
+    <div class="container">
+        <div id="dados-atuais">
+            <p>Temperatura Atual: <span id="temperatura-atual">--</span> °C</p>
+            <p>Eficiência Atual: <span id="eficiencia-atual">--</span>%</p>
+            <p>Última Atualização: <span id="ultima-atualizacao">--</span></p>
+        </div>
+    </div>
+<h2>Gráfico de Histórico</h2>
+<div style="width:80%; height: 500px; margin:auto;">
+    <canvas id="historicoChart"></canvas>
+</div>
+    <h2>Histórico</h2>
+    <div id="historico-container">
+        <div class="table-header">
+            <div class="th">Data e Hora</div>
+            <div class="th">Temperatura (°C)</div>
+            <div class="th">Eficiência (%)</div>
+        </div>
+        <div id="historico-tabela-corpo">
+        </div>
+        <p id="mensagem"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+Não tenho experiência com Backend, conheço apenas a lógica de progamação e o básico de redes de computadores, além do FrontEnd e 
+do basico de banco de dados.
+Todo o Backend fora a conexão com o banco de dados foi feito com o auxílio da documentação, videoaulas e Inteligências Artificiais.
+Parte da responsividade com Javascript (principalmente a lógica com Backend) também foi feita com auxílio.
+Meu objetivo é atuar como Dev Fullstack, e vejo o estágio como uma forma de aprimorar minhas habilidades e conhecimentos em FrontEnd
+e desenvolver habilidades e conhecimentos em Backend.
+
+Sugestões de melhorias futuras para o software:
+
+--Adicionar uma integração com API de previsão do tempo para que seja possível se preparar melhor para os proximos dias e adaptar
+a temperatura do ambiente para uma melhor eficiencia da maquina;
+--Desenvolver uma integração aquecedores no ambiente da maquina (se possuir), fazendo com que eles liguem automaticamente quando a
+temperatura estiver mais baixa;

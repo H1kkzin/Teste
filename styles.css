@@ -1,0 +1,248 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0e25f, #df8704);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto 40px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#dados-atuais-section #dados-atuais-content {
+    text-align: center;
+    font-weight: bold;
+}
+
+#dados-atuais-section p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#dados-atuais-section p span {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+#ultima-atualizacao {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#historico-completo-section .table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.data-table thead th {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px 10px 0 0;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+    text-align: center;
+    width: 33.33%;
+}
+
+.data-table tbody {
+    display: block;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.data-table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.data-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.data-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+p#mensagem {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+p#mensagem.erro {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ffcccc;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+p#mensagem.sucesso {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: #ccffcc;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+p#mensagem:empty {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    #dados-atuais-section p {
+        font-size: 1.1em;
+    }
+
+    #dados-atuais-section p span {
+        font-size: 1.3em;
+    }
+
+    .data-table th,
+    .data-table td {
+        font-size: 0.9em;
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px auto 20px auto;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    #dados-atuais-section p {
+        font-size: 1em;
+    }
+
+    #dados-atuais-section p span {
+        font-size: 1.2em;
+    }
+
+    .data-table {
+        font-size: 0.8em;
+    }
+
+}

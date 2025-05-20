@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Eficiencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Monitoramento da Máquina</h1>
+    </header>
+
+    <main class="container">
+        <section id="dados-atuais-section" class="card">
+            <h2>Dados Atuais</h2>
+            <div id="dados-atuais-content">
+                <p>Temperatura Atual: <span id="temperatura-atual">--</span> °C</p>
+                <p>Eficiência Atual: <span id="eficiencia-atual">--</span>%</p>
+                <p id="ultima-atualizacao">Última Atualização: --</p>
+            </div>
+            <p id="mensagem" class="info"></p>
+        </section>
+
+        <section id="grafico-historico-section" class="card">
+            <h2>Gráfico de Histórico</h2>
+            <div class="chart-container">
+                <canvas id="historicoChart"></canvas>
+            </div>
+        </section>
+
+        <section id="historico-completo-section" class="card">
+            <h2>Histórico de Registros</h2>
+            <div id="historico-container" class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data e Hora</th>
+                            <th>Temperatura (°C)</th>
+                            <th>Eficiência (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historico-tabela-corpo">
+                        <tr>
+                            <td colspan="3">Carregando histórico...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
